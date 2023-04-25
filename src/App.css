@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  position: relative;
+
+
+
+
+}
+
+.container .title {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+
+
+
+}
+
+.container .title img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+
+}
+
+.container .title h3 {
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.container .title h3 span {
+  color: orange;
+}
+
+.container .header {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.container .header h3 {
+  color: rgb(56, 54, 54);
+  font-size: 25px;
+}
+
+.container .header ul li {
+  list-style: circle;
+  padding: 3px;
+
+}
+
+.container .table {
+  width: 100%;
+}
+
+.container .table .tableone table,
+.container .table .tabletwo table,
+.container .table .tablethree table {
+  margin: 20px 0;
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+
+
+
+}
+
+.container .table h3 {
+  font-size: 25px;
+}
+
+.container .footer {
+  width: 100%;
+}
+
+.container .footer h4 {
+  font-size: 25px;
+
+}
+
+.container .footer ul li {
+  list-style: decimal;
+  padding: 3px;
+
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .container .table .tableone table,
+  .container .table .tabletwo table,
+  .container .table .tablethree table {
+    margin: 20px;
+    width: 90%;
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .container .footer ul {
+    list-style: disc;
+    padding-top: 3px;
+
+  }
+
+}
+
+.container .social {
+  display: flex;
+  justify-content: center;
+}
+
+.container .social img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+
+}
+
+.container .social div:hover {
+  transform: translateY(-40px);
+  transition: 0.5s;
+
+}
+
+.container .social div:hover p {
+  visibility: visible;
+  background: linear-gradient(rgb(255, 32, 240), rgb(0, 187, 255));
+  border-radius: 4px;
+  padding: 7px;
+  color: azure;
+}
+
+
+.container .social div {
+  display: flex;
+  margin: 25px;
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+.container .social div a {
+  text-decoration: none;
+  color: black;
+}
+
+.container .social div a p {
+  visibility: hidden;
+  transition: 0.3s;
+
+}
+
+.container .wtsapp {
+  position: fixed;
+  content: '';
+  bottom: 90px;
+  width: 30px;
+  height: 30px;
+  right: 30px;
+  background-color: rgb(0, 255, 47);
+  border-radius: 50%;
+}
+
+.btn {
+  width: 200px;
+  position: relative;
+  padding: 7px;
+  margin-top: 10px;
+  background: none;
+}
